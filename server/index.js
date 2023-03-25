@@ -1,8 +1,8 @@
 const app=require('./app')
 const mongoose=require('mongoose');
 
-const CONNECTION_URL='mongodb://127.0.0.1:27017';
-const PORT=5000;
+const CONNECTION_URL='mongodb+srv://admin:admin@cluster0.fsuebpj.mongodb.net/?retryWrites=true&w=majority';
+const PORT=5000 || process.env.PORT;
 mongoose.connect(CONNECTION_URL,{ useNewUrlParser: true })
 .then(()=>{
     app.listen(PORT,()=>{
