@@ -1,5 +1,4 @@
 const mongoose=require('mongoose');
-
 const userSchema=mongoose.Schema({
     email:{
         type:String,
@@ -8,6 +7,15 @@ const userSchema=mongoose.Schema({
     password:{
         type:String,
         require:true
+    },
+    token:{
+        type:String,
+        default:null,
+    },
+    notes:[Object],
+    time:{
+        type:Date,
+        default:Date.now
     }
 })
 
