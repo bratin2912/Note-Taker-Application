@@ -1,0 +1,29 @@
+.add-note-container{
+    margin-top: 5%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-note-container form input,textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(151, 150, 150);
+    padding: 1% 1%;
+    margin-bottom: 5%;
+}
+
+.add-note-container form h4{
+    margin-bottom: 1%;
+}
+
+.add-note-btn{
+    width: 100%;
+    background-color: rgb(53, 53, 250);
+    border: none;
+    padding: 1% 1%;
+    color: #ffffff;
+    font-size: large;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(105, 105, 243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container form{
+    width: 20%;
+    height: 40vh;
+    background-color: #ffffff;
+    padding: 2% 2%;
+    border-radius: 4px;
+}
+
+.login-container form h1{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.login-container form input{
+    width: 96%;
+    border-radius: 5px;
+    border: 1px solid rgb(151, 150, 150);
+    padding: 2% 2%;
+    margin-bottom: 5%;
+}
+
+.login-container form h4{
+    margin-bottom: 2%;
+    font-size: large;
+    font-weight: 300;
+}
+
+.login-btn{
+    width: 100%;
+    background-color: rgb(53, 53, 250);
+    border: none;
+    padding: 1% 1%;
+    color: #ffffff;
+    font-size: large;
+    border-radius: 4px;
+    margin-top: 10%;
+    cursor: pointer;
+}
+

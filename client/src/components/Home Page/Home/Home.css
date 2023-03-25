@@ -1,0 +1,23 @@
+.home-container{
+    background-image: url('../../../assets/HomeCover.avif');
+}
+
+.home-search input{
+    margin-top: 1%;
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid rgb(151, 150, 150);
+    padding: 0.5% 0.5%;
+    margin-bottom: 1%;
+    margin-left:4%;
+}
+
+.home-search-result{
+    margin-top:1%;
+    height: 20vh;
+    width: 80%;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+}
