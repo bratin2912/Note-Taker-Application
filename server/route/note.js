@@ -1,12 +1,16 @@
 const express=require('express');
 const router=express.Router();
-const notes=require('../model/noteModel')
+const users = require('../model/userModel');
 
-router.get('/notes',(async(req,res)=>{
+
+router.get('/notes/:token',(async(req,res)=>{
+    const token=req.params.token;
     try{
-        const note=await notes.find();
+        const note=await users.findOne({token})
+        console.log(note)
         res.status(200).send({
-            note
+            data:note.notes,
+            time:note.time
         })
     }
     catch(err){
@@ -31,4 +35,18 @@ router.patch('/notes',(async(req,res)=>{
     }
 }))
 
+router.post('/notes',(async(req,res)=>{
+    const {title,description,token}=req.body;
+    try{
+        const note=await users.updateOne({token},{$push:{notes:{title,description}}});
+        res.status(200).send({
+            note
+        })
+    }
+    catch(err){
+        res.status(500).send({
+            message:"Internal server error"
+        })
+    }
+}))
 module.exports=router;
